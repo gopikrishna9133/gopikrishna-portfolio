@@ -1,30 +1,37 @@
-# Gopi Krishna Kuncham --- Full Stack Portfolio
 
-A modern full-stack portfolio built with React, Node.js, Express, and
-MongoDB.\
-Designed with a clean dark UI and structured backend APIs for easy
-content management.
+# Gopi Krishna Kuncham — Full Stack Portfolio
 
-------------------------------------------------------------------------
+A modern full-stack portfolio built with React, Node.js, Express, and MongoDB.
+Designed with a clean dark UI and structured backend APIs for easy content management.
+
+---
+
+## 🚀 Live Deployments
+
+Frontend (Vercel):
+https://gopikrishna-portfolio-sandy.vercel.app/
+
+Backend (Railway):
+https://gopikrishna-portfolio-production.up.railway.app/
+
+---
 
 ## 🚀 Tech Stack
 
 ### Frontend
-
--   React (Vite)
--   Tailwind CSS
--   React Icons
--   Axios
+- React (Vite)
+- Tailwind CSS
+- React Icons
+- Axios
 
 ### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- Resend (Production Email Service)
 
--   Node.js
--   Express.js
--   MongoDB Atlas
--   Mongoose
--   Nodemailer (Contact Email Integration)
-
-------------------------------------------------------------------------
+---
 
 ## 📁 Project Structure
 
@@ -46,86 +53,89 @@ content management.
      ├── routes/
      └── server.js
 
-------------------------------------------------------------------------
+---
 
 ## ✨ Features
 
--   Dynamic Hero section (editable from MongoDB)
--   About section (single document structure)
--   Dynamic Skills with flexible categories
--   Certifications with external/PDF links
--   Projects with full CRUD
--   Contact form:
-    -   Stores data in MongoDB
-    -   Sends email notification via Gmail SMTP
--   Smooth scroll navigation with active state highlight
--   Clean dark UI with cyan accent theme
--   Fully deployment-ready
+- Dynamic Hero section (editable via API)
+- About section (single document structure)
+- Flexible Skills with dynamic categories
+- Certifications with external/PDF links
+- Projects with full CRUD
+- Contact form:
+  - Stores messages in MongoDB
+  - Sends production email via Resend
+- Smooth scroll navigation with active section highlight
+- Dark tech UI theme with cyan accent
+- Fully deployment-ready (Railway + Vercel)
 
-------------------------------------------------------------------------
+---
 
 ## 🔌 API Endpoints
 
 ### Hero
-
-GET `/api/hero`\
+GET `/api/hero`  
 PUT `/api/hero`
 
 ### About
-
-GET `/api/about`\
+GET `/api/about`  
 PUT `/api/about`
 
 ### Skills
-
-GET `/api/skills`\
+GET `/api/skills`  
 PUT `/api/skills`
 
 ### Certifications
-
-GET `/api/certifications`\
-POST `/api/certifications`\
-PUT `/api/certifications/:id`\
+GET `/api/certifications`  
+POST `/api/certifications`  
+PUT `/api/certifications/:id`  
 DELETE `/api/certifications/:id`
 
 ### Projects
-
-GET `/api/projects`\
-POST `/api/projects`\
-PUT `/api/projects/:id`\
+GET `/api/projects`  
+POST `/api/projects`  
+PUT `/api/projects/:id`  
 DELETE `/api/projects/:id`
 
 ### Contact
-
-POST `/api/contact`\
+POST `/api/contact`  
 GET `/api/contact`
 
-------------------------------------------------------------------------
+---
 
-## 📧 Contact Email Setup
+## 📧 Email Configuration (Resend - Production)
 
-To enable email notifications:
+1. Create account at https://resend.com
+2. Generate API key
+3. Add to environment variables:
 
-1.  Enable 2-Step Verification in Gmail.
-2.  Generate an App Password.
-3.  Add to `.env`:
-
-```{=html}
-<!-- -->
-```
-    EMAIL_USER=yourgmail@gmail.com
-    EMAIL_PASS=your_app_password
-
-------------------------------------------------------------------------
-
-## ⚙️ Environment Variables
+Backend (.env):
 
     PORT=8000
     MONGO_URI=your_mongodb_connection_string
-    EMAIL_USER=yourgmail@gmail.com
-    EMAIL_PASS=your_app_password
+    RESEND_API_KEY=your_resend_api_key
 
-------------------------------------------------------------------------
+Note:
+Free Resend accounts require:
+from: "onboarding@resend.dev"
+
+For custom domain email, you must verify your domain in Resend.
+
+---
+
+## ⚙️ Environment Variables
+
+### Backend
+
+    PORT=8000
+    MONGO_URI=your_mongodb_connection_string
+    RESEND_API_KEY=your_resend_api_key
+
+### Frontend
+
+    VITE_API_URL=https://gopikrishna-portfolio-production.up.railway.app/api
+
+---
 
 ## 🛠 Local Development
 
@@ -141,39 +151,35 @@ To enable email notifications:
     npm install
     npm run dev
 
-------------------------------------------------------------------------
+---
 
-## 🌍 Deployment
+## 🌍 Deployment Architecture
 
-Recommended setup:
+Frontend → Vercel  
+Backend → Railway  
+Database → MongoDB Atlas  
+Email → Resend  
 
-Frontend → Vercel\
-Backend → Render / Railway\
-Database → MongoDB Atlas
-
-Update frontend `.env`:
-
-    VITE_API_URL=https://your-backend-url/api
-
-------------------------------------------------------------------------
+---
 
 ## 📌 Design Philosophy
 
--   Minimal dark tech theme
--   Clean spacing and typography
--   Structured backend for easy updates
--   Scalable API-first architecture
+- Clean dark tech theme
+- Clear section separation
+- API-first architecture
+- Production-ready backend structure
+- Easy content updates via MongoDB
 
-------------------------------------------------------------------------
+---
 
 ## 👨‍💻 Author
 
-**Gopi Krishna Kuncham**\
-Full Stack Software Engineer
+Gopi Krishna Kuncham  
+Full Stack Software Engineer  
 
-LinkedIn: https://linkedin.com/in/gopi-krishna-kuncham\
-GitHub: https://github.com/gopikrishna9133
+LinkedIn: https://linkedin.com/in/gopi-krishna-kuncham  
+GitHub: https://github.com/gopikrishna9133  
 
-------------------------------------------------------------------------
+---
 
 © 2026 Gopi Krishna Kuncham. All rights reserved.
