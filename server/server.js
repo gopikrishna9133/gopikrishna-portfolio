@@ -9,9 +9,6 @@ import aboutRoutes from "./routes/aboutRoutes.js";
 import skillsRoutes from "./routes/skillsRoutes.js";
 import certificationRoutes from "./routes/certificationRoutes.js";
 
-console.log("EMAIL_USER:", process.env.EMAIL_USER);
-console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
-
 
 dotenv.config();
 connectDB();
