@@ -20,9 +20,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://gopikrishna-portfolio-sandy.vercel.app/"
+      "https://gopikrishna-portfolio-sandy.vercel.app"
     ]
-  }));
+  })
+);
 app.use(express.json());
 
 app.use("/api/projects", projectRoutes);
