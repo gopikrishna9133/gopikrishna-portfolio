@@ -7,9 +7,6 @@ import {
 
 const router = express.Router();
 
-router.route("/")
-  .get(getHero)
-  .post(createHero)
-  .put(updateHero);
+router.route("/").get(getHero).post(createHero).put(updateHero);
 
 export default router;
