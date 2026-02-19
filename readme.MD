@@ -1,4 +1,3 @@
-
 # Gopi Krishna Kuncham — Full Stack Portfolio
 
 A modern full-stack portfolio built with React, Node.js, Express, and MongoDB.
@@ -11,20 +10,22 @@ Designed with a clean dark UI and structured backend APIs for easy content manag
 Frontend (Vercel):
 https://gopikrishna-portfolio-sandy.vercel.app/
 
-Backend (Railway):
-https://gopikrishna-portfolio-production.up.railway.app/
+Backend (Render):
+https://gopikrishna-portfolio.onrender.com/
 
 ---
 
 ## 🚀 Tech Stack
 
 ### Frontend
+
 - React (Vite)
 - Tailwind CSS
 - React Icons
 - Axios
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB Atlas
@@ -74,30 +75,36 @@ https://gopikrishna-portfolio-production.up.railway.app/
 ## 🔌 API Endpoints
 
 ### Hero
+
 GET `/api/hero`  
 PUT `/api/hero`
 
 ### About
+
 GET `/api/about`  
 PUT `/api/about`
 
 ### Skills
+
 GET `/api/skills`  
 PUT `/api/skills`
 
 ### Certifications
+
 GET `/api/certifications`  
 POST `/api/certifications`  
 PUT `/api/certifications/:id`  
 DELETE `/api/certifications/:id`
 
 ### Projects
+
 GET `/api/projects`  
 POST `/api/projects`  
 PUT `/api/projects/:id`  
 DELETE `/api/projects/:id`
 
 ### Contact
+
 POST `/api/contact`  
 GET `/api/contact`
 
@@ -133,7 +140,7 @@ For custom domain email, you must verify your domain in Resend.
 
 ### Frontend
 
-    VITE_API_URL=https://gopikrishna-portfolio-production.up.railway.app/api
+    VITE_API_URL=https://gopikrishna-portfolio.onrender.com/api
 
 ---
 
@@ -156,9 +163,9 @@ For custom domain email, you must verify your domain in Resend.
 ## 🌍 Deployment Architecture
 
 Frontend → Vercel  
-Backend → Railway  
+Backend → Render  
 Database → MongoDB Atlas  
-Email → Resend  
+Email → Resend
 
 ---
 
@@ -175,10 +182,10 @@ Email → Resend
 ## 👨‍💻 Author
 
 Gopi Krishna Kuncham  
-Full Stack Software Engineer  
+Full Stack Software Engineer
 
 LinkedIn: https://linkedin.com/in/gopi-krishna-kuncham  
-GitHub: https://github.com/gopikrishna9133  
+GitHub: https://github.com/gopikrishna9133
 
 ---
 
