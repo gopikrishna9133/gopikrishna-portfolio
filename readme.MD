@@ -68,7 +68,7 @@ https://gopikrishna-portfolio.onrender.com/
   - Sends production email via Resend
 - Smooth scroll navigation with active section highlight
 - Dark tech UI theme with cyan accent
-- Fully deployment-ready (Railway + Vercel)
+- Fully deployment-ready (Render + Vercel)
 
 ---
 

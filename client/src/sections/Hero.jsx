@@ -4,17 +4,13 @@ export default function Hero({ data }) {
   return (
     <section className="min-h-screen flex items-center justify-center bg-background">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-
         <div className="flex justify-center">
-          {data?.profileImage ? (
-            <img
-              src={data.profileImage}
-              alt="profile"
-              className="w-72 h-72 rounded-full object-cover border-4 border-primary shadow-lg"
-            />
-          ) : (
-            <div className="w-72 h-72 bg-surface rounded-full"></div>
-          )}
+          <img
+            src={data?.profileImage || "/images/profile_photo.png"}
+            alt="profile"
+            onError={(e) => (e.target.src = "/images/profile_photo.png")}
+            className="w-72 h-72 rounded-full object-cover border-4 border-primary shadow-lg"
+          />
         </div>
 
         <div>
@@ -50,33 +46,45 @@ export default function Hero({ data }) {
 
           <div className="flex gap-8 mt-8 text-3xl text-textSecondary">
             {data?.linkedin && (
-              <a href={data.linkedin} target="_blank" className="hover:text-primary transition-transform duration-200 hover:scale-110">
+              <a
+                href={data.linkedin}
+                target="_blank"
+                className="hover:text-primary transition-transform duration-200 hover:scale-110"
+              >
                 <FaLinkedin />
               </a>
             )}
 
             {data?.github && (
-              <a href={data.github} target="_blank" className="hover:text-primary transition-transform duration-200 hover:scale-110">
+              <a
+                href={data.github}
+                target="_blank"
+                className="hover:text-primary transition-transform duration-200 hover:scale-110"
+              >
                 <FaGithub />
               </a>
             )}
 
             {data?.email && (
-              <a href={`mailto:${data.email}`} className="hover:text-primary transition-transform duration-200 hover:scale-110">
+              <a
+                href={`mailto:${data.email}`}
+                className="hover:text-primary transition-transform duration-200 hover:scale-110"
+              >
                 <FaEnvelope />
               </a>
             )}
 
             {data?.phone && (
-              <a href={`tel:${data.phone}`} className="hover:text-primary transition-transform duration-200 hover:scale-110">
+              <a
+                href={`tel:${data.phone}`}
+                className="hover:text-primary transition-transform duration-200 hover:scale-110"
+              >
                 <FaPhone />
               </a>
             )}
           </div>
         </div>
-
       </div>
     </section>
   );
 }
-
